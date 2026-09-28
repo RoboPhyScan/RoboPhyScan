@@ -1,0 +1,12 @@
+{
+  "batch_01_0002_Bottle_002_lemon_tea": {
+    "Multilevel_Body": {
+      "kinetic_friction_coefficient": 0.58,
+      "static_friction_coefficient": 0.78
+    },
+    "Cylindrical_Lid": {
+      "kinetic_friction_coefficient": 0.67,
+      "static_friction_coefficient": 0.86
+    }
+  }
+}

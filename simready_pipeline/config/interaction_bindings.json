@@ -1,0 +1,43 @@
+{
+  "interactions": [
+    {
+      "id": "lemon_tea_bottle_thread_coupling",
+      "batch": "batch_01_0002_Bottle_002_lemon_tea",
+      "module": "thread_coupling",
+      "target": {
+        "usd": "./sim_ready/Bottle.usd",
+        "kind": "joint",
+        "prim_name": "Cylindrical_Lid_virtual_prismatic_to_Cylindrical_Lid"
+      },
+      "physics": {
+        "formula": "delta_z = (starts * pitch_m) / (2*pi) * delta_theta",
+        "parameter_source": "explicit test assumption; PKL has no thread fields",
+        "units": {
+          "pitch_m": "m",
+          "lead_m": "m",
+          "theta": "rad"
+        }
+      },
+      "usd": {
+        "hinge": {
+          "target_prim_name": "Cylindrical_Lid_virtual_prismatic_to_Cylindrical_Lid"
+        },
+        "prismatic": {
+          "target_prim_name": "Multilevel_Body_to_Cylindrical_Lid_virtual_prismatic"
+        },
+        "pitch_m": 0.0027,
+        "starts": 1,
+        "opening_sign": 1,
+        "axis": "Y",
+        "backend": "mimic",
+        "joint_friction_coefficient": 5E-05,
+        "cpu_only": true,
+        "geometry": {
+          "visual_preserve_thread": true,
+          "collision_policy": "hollow_cylinder",
+          "collision_exclude_thread_detail": true
+        }
+      }
+    }
+  ]
+}

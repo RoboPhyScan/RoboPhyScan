@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "description": "Single Bottle thread coupling selection.",
+  "pipeline": {
+    "convert_urdf_to_usd": true,
+    "attach_grasp_poses": true,
+    "package_interaction_behaviors": true
+  },
+  "assets": [
+    {
+      "batch": "batch_01_0002_Bottle_002_lemon_tea",
+      "enabled": true,
+      "interaction_ids": [
+        "lemon_tea_bottle_thread_coupling"
+      ]
+    }
+  ]
+}
